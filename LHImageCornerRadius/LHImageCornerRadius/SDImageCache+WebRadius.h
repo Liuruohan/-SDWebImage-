@@ -8,6 +8,10 @@
 
 #import <SDWebImage/SDImageCache.h>
 
+
+
 @interface SDImageCache (WebRadius)
+
+@property (nonatomic,retain)NSNumber * isCornerRadius;
 
 @end

@@ -42,13 +42,23 @@
 
 @end
 
-
 @implementation SDImageCache (WebRadius)
 
 + (void)load{
     Method originalMethod = class_getInstanceMethod(self, @selector(storeImage:imageData:forKey:toDisk:completion:));
     Method myMethod = class_getInstanceMethod(self, @selector(lh_storeImage:imageData:forKey:toDisk:completion:));
     method_exchangeImplementations(originalMethod, myMethod);
+}
+
+static const char cornerRadiusKey = '\0';
+- (void)setIsCornerRadius:(NSNumber *)isCornerRadius{
+    [self willChangeValueForKey:@"isCornerRadius"];
+    objc_setAssociatedObject(self, &cornerRadiusKey, isCornerRadius, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self didChangeValueForKey:@"isCornerRadius"];
+    
+}
+- (NSNumber*)isCornerRadius{
+    return objc_getAssociatedObject(self, &cornerRadiusKey);
 }
 
 - (void)lh_storeImage:(nullable UIImage *)image
@@ -62,14 +72,17 @@
         }
         return;
     }
-    image = [image imageByRoundCornerRadius];
     
-    NSString * imageType = [self typeForImageData:imageData];
-    if ([imageType isEqualToString:@"image/jpeg"]) {
-        imageData = UIImageJPEGRepresentation(image, 1.0);
-    }
-    else if ([imageType isEqualToString:@"image/png"]){
-        imageData = UIImagePNGRepresentation(image);
+    if ([self.isCornerRadius boolValue]) {
+        image = [image imageByRoundCornerRadius];
+        
+        NSString * imageType = [self typeForImageData:imageData];
+        if ([imageType isEqualToString:@"image/jpeg"]) {
+            imageData = UIImageJPEGRepresentation(image, 1.0);
+        }
+        else if ([imageType isEqualToString:@"image/png"]){
+            imageData = UIImagePNGRepresentation(image);
+        }
     }
     Ivar memCachevar = class_getInstanceVariable([self class], [@"memCache" UTF8String]);
     if (memCachevar == nil) {
