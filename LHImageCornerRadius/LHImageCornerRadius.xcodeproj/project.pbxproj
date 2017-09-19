@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45103FE91F70AD87001FAF00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45103FE81F70AD87001FAF00 /* main.m */; };
+		45103FEC1F70AD87001FAF00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45103FEB1F70AD87001FAF00 /* AppDelegate.m */; };
+		45103FEF1F70AD87001FAF00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45103FEE1F70AD87001FAF00 /* ViewController.m */; };
+		45103FF21F70AD87001FAF00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45103FF01F70AD87001FAF00 /* Main.storyboard */; };
+		45103FF41F70AD87001FAF00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45103FF31F70AD87001FAF00 /* Assets.xcassets */; };
+		45103FF71F70AD87001FAF00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45103FF51F70AD87001FAF00 /* LaunchScreen.storyboard */; };
+		451040051F70EA3D001FAF00 /* SDImageCache+WebRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 451040041F70EA3D001FAF00 /* SDImageCache+WebRadius.m */; };
+		8B0BF5F879AD5770631D3FF0 /* libPods-LHImageCornerRadius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E933717CECADEB51C8ED07 /* libPods-LHImageCornerRadius.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1022223A782AB32276E6B79A /* Pods-LHImageCornerRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHImageCornerRadius.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHImageCornerRadius/Pods-LHImageCornerRadius.debug.xcconfig"; sourceTree = "<group>"; };
+		26AE38DBD26B3AE3590E013B /* Pods-LHImageCornerRadius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHImageCornerRadius.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHImageCornerRadius/Pods-LHImageCornerRadius.release.xcconfig"; sourceTree = "<group>"; };
+		36E933717CECADEB51C8ED07 /* libPods-LHImageCornerRadius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LHImageCornerRadius.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45103FE41F70AD87001FAF00 /* LHImageCornerRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHImageCornerRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45103FE81F70AD87001FAF00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45103FEA1F70AD87001FAF00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45103FEB1F70AD87001FAF00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45103FED1F70AD87001FAF00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		45103FEE1F70AD87001FAF00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45103FF11F70AD87001FAF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45103FF31F70AD87001FAF00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45103FF61F70AD87001FAF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45103FF81F70AD87001FAF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451040031F70EA3D001FAF00 /* SDImageCache+WebRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDImageCache+WebRadius.h"; sourceTree = "<group>"; };
+		451040041F70EA3D001FAF00 /* SDImageCache+WebRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDImageCache+WebRadius.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45103FE11F70AD87001FAF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0BF5F879AD5770631D3FF0 /* libPods-LHImageCornerRadius.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45103FDB1F70AD86001FAF00 = {
+			isa = PBXGroup;
+			children = (
+				45103FE61F70AD87001FAF00 /* LHImageCornerRadius */,
+				45103FE51F70AD87001FAF00 /* Products */,
+				7D15860869FC173D8E490A7C /* Pods */,
+				C5BCD7AA56B5E62E963E0EE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45103FE51F70AD87001FAF00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45103FE41F70AD87001FAF00 /* LHImageCornerRadius.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45103FE61F70AD87001FAF00 /* LHImageCornerRadius */ = {
+			isa = PBXGroup;
+			children = (
+				45103FEA1F70AD87001FAF00 /* AppDelegate.h */,
+				45103FEB1F70AD87001FAF00 /* AppDelegate.m */,
+				45103FED1F70AD87001FAF00 /* ViewController.h */,
+				45103FEE1F70AD87001FAF00 /* ViewController.m */,
+				45103FF01F70AD87001FAF00 /* Main.storyboard */,
+				45103FF31F70AD87001FAF00 /* Assets.xcassets */,
+				45103FF51F70AD87001FAF00 /* LaunchScreen.storyboard */,
+				45103FF81F70AD87001FAF00 /* Info.plist */,
+				45103FE71F70AD87001FAF00 /* Supporting Files */,
+			);
+			path = LHImageCornerRadius;
+			sourceTree = "<group>";
+		};
+		45103FE71F70AD87001FAF00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				451040031F70EA3D001FAF00 /* SDImageCache+WebRadius.h */,
+				451040041F70EA3D001FAF00 /* SDImageCache+WebRadius.m */,
+				45103FE81F70AD87001FAF00 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D15860869FC173D8E490A7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1022223A782AB32276E6B79A /* Pods-LHImageCornerRadius.debug.xcconfig */,
+				26AE38DBD26B3AE3590E013B /* Pods-LHImageCornerRadius.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5BCD7AA56B5E62E963E0EE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36E933717CECADEB51C8ED07 /* libPods-LHImageCornerRadius.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45103FE31F70AD87001FAF00 /* LHImageCornerRadius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45103FFB1F70AD87001FAF00 /* Build configuration list for PBXNativeTarget "LHImageCornerRadius" */;
+			buildPhases = (
+				43245DE8510032CB4EF8A622 /* [CP] Check Pods Manifest.lock */,
+				45103FE01F70AD87001FAF00 /* Sources */,
+				45103FE11F70AD87001FAF00 /* Frameworks */,
+				45103FE21F70AD87001FAF00 /* Resources */,
+				A00207B90DF212307C61FA6D /* [CP] Embed Pods Frameworks */,
+				D6E064E8C6FA4E735804B337 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHImageCornerRadius;
+			productName = LHImageCornerRadius;
+			productReference = 45103FE41F70AD87001FAF00 /* LHImageCornerRadius.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45103FDC1F70AD87001FAF00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Air;
+				TargetAttributes = {
+					45103FE31F70AD87001FAF00 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 45103FDF1F70AD87001FAF00 /* Build configuration list for PBXProject "LHImageCornerRadius" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45103FDB1F70AD86001FAF00;
+			productRefGroup = 45103FE51F70AD87001FAF00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45103FE31F70AD87001FAF00 /* LHImageCornerRadius */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45103FE21F70AD87001FAF00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45103FF71F70AD87001FAF00 /* LaunchScreen.storyboard in Resources */,
+				45103FF41F70AD87001FAF00 /* Assets.xcassets in Resources */,
+				45103FF21F70AD87001FAF00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43245DE8510032CB4EF8A622 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LHImageCornerRadius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00207B90DF212307C61FA6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHImageCornerRadius/Pods-LHImageCornerRadius-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E064E8C6FA4E735804B337 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHImageCornerRadius/Pods-LHImageCornerRadius-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45103FE01F70AD87001FAF00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45103FEF1F70AD87001FAF00 /* ViewController.m in Sources */,
+				45103FEC1F70AD87001FAF00 /* AppDelegate.m in Sources */,
+				451040051F70EA3D001FAF00 /* SDImageCache+WebRadius.m in Sources */,
+				45103FE91F70AD87001FAF00 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45103FF01F70AD87001FAF00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45103FF11F70AD87001FAF00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45103FF51F70AD87001FAF00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45103FF61F70AD87001FAF00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45103FF91F70AD87001FAF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45103FFA1F70AD87001FAF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45103FFC1F70AD87001FAF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1022223A782AB32276E6B79A /* Pods-LHImageCornerRadius.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LHImageCornerRadius/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YunRui.LHImageCornerRadius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45103FFD1F70AD87001FAF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AE38DBD26B3AE3590E013B /* Pods-LHImageCornerRadius.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LHImageCornerRadius/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YunRui.LHImageCornerRadius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45103FDF1F70AD87001FAF00 /* Build configuration list for PBXProject "LHImageCornerRadius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45103FF91F70AD87001FAF00 /* Debug */,
+				45103FFA1F70AD87001FAF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45103FFB1F70AD87001FAF00 /* Build configuration list for PBXNativeTarget "LHImageCornerRadius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45103FFC1F70AD87001FAF00 /* Debug */,
+				45103FFD1F70AD87001FAF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45103FDC1F70AD87001FAF00 /* Project object */;
+}
